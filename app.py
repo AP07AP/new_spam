@@ -5,12 +5,14 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
-# Link to the local nltk_data folder
-nltk.data.path.append('./nltk_data')
-
 # Ensure NLTK resources are available
 nltk.download('punkt')
 nltk.download('stopwords')
+
+# Link to the local nltk_data folder
+nltk.data.path.append('./nltk_data')
+
+
 
 ps = PorterStemmer()
 stop_words = set(stopwords.words('english'))  # Pre-load stopwords
